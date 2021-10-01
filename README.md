@@ -11,5 +11,23 @@ Program Execution and Printing Outputs in the Command Link based on the Key-Or-E
 
 ### Shell Prompt
 
-The Prompt, 
+The Prompt, $ which is called the 'command prompt', is issued by the shell. While the Prompt is Displayed, you can type a command
+
+Shell reads the input from the command Line, when the user press 'Enter'. It Determines the command you want executed by looking at the first word
+of the input. A Word is a unbroken set of character. Spaces and Tabs are the Seperate Words. All the seperate commands are followed by Spaces -or- Tab's
+
+#### Major Types Of Shells
+
+- Bourne Shell - $ Character is the default prompt
+- C Shell      - % Character is the default prompt
+
+##### Bourne Shell SubCategories
+- Bourne Shell (sh)
+- Korn Shell (ksh)
+- Bourne Again Shell (bash)
+- POSIX Shell (sh)
+
+##### C-Type Shell
+- C Shell (csh)
+- TENEX/TOPS C Shell (tcsh)
 

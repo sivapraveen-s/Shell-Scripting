@@ -1,8 +1,7 @@
 
 <h1 align="center"> Shell Scripting </h1>
---------------------------------------------------------------------------------------------------------------------------------------------
-## Introduction
 
+## Introduction
 A Shell Script is a computer program designed to run by the Unix/linux shell which could be one of the following:
 - The Bourne Shell
 - The C Shell

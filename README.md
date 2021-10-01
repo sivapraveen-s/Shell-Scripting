@@ -91,7 +91,7 @@ echo $DATA
 
 #### Read Only Variables
 
-**Keyword is `readonly` **
+**Keyword is `readonly`**
 
 ##### Example Program 02
 ```
@@ -108,7 +108,7 @@ Output of Program 02:
 
 #### Unsetting Variables
 
-<p align = "center"> Unsetting or Deleting a variable directly the shell is remove the variable from the list of variables that it tracks. Once unset variable cannot be access the store value in the variable.
+<p align = "left"> Unsetting or Deleting a variable directly the shell is remove the variable from the list of variables that it tracks. Once unset variable cannot be access the store value in the variable.
 
 ```
 Syntax: unset VARIABLE_NAME
@@ -120,4 +120,10 @@ Syntax: unset VARIABLE_NAME
 2. Environment Variables
 3. Shell Variables
 
+
+#### Scope of Variables
+
+
+Variables in the Bournce shell do not have to be declared as they do like in C/C++. But if you try to read an undeclared variabled, the result is the empty string.
+you get no warning or errors. This can cause some subtle bugs- if you assign
 

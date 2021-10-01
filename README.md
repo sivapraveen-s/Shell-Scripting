@@ -39,9 +39,9 @@ file extension - filename.sh
 before you add anything else to your script, you need to alert the system that a shell script is begin started. This is done using the
 shebang construct. for example
 
-'''
+```
 #!/bin/sh
-'''
+```
 
 This above construct tells the system that the commands that follow are to be executed by the Bourne Shell. It is called a Shebang because the **#** symbol is called a hash, and ! Symbol is called a bang.
 

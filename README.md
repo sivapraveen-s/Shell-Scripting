@@ -108,22 +108,39 @@ Output of Program 02:
 
 #### Unsetting Variables
 
-<p align = "left"> Unsetting or Deleting a variable directly the shell is remove the variable from the list of variables that it tracks. Once unset variable cannot be access the store value in the variable.
+  <p align = "left"> Unsetting or Deleting a variable directly the shell is remove the variable from the list of variables that it  tracks.
+  Once unset variable cannot be access the store value in the variable.
 
 ```
 Syntax: unset VARIABLE_NAME
 ```
 
 #### Variable Types
-
-1. Local Variables
-2. Environment Variables
-3. Shell Variables
+  
+  1. Local Variables
+  2. Environment Variables
+  3. Shell Variables
 
 
 #### Scope of Variables
 
+  Variables in the Bournce shell do not have to be declared as they do like in C/C++. 
+  But if you try to read an undeclared variable, the result is the empty string.
+  you get no warning or errors. This can cause some subtle bugs- if you assign
 
-Variables in the Bournce shell do not have to be declared as they do like in C/C++. But if you try to read an undeclared variabled, the result is the empty string.
-you get no warning or errors. This can cause some subtle bugs- if you assign
-
+#### Special Variables
+  $$   - Represents Process ID -or- PID of the current shell
+  $0  - The filename of the current script
+  $#  - The number of arguments supplied to a script
+  $*  - Arugments are double quoted. If a script received two arguments, $* is equivalent to $1 $2
+  $@  - Arguments are Inidvidually Double quoted. If a script receives two arguments, $@ is equivalent to $1 $2.
+  $?  - Exit status of the last command which was executed
+  $~  - Process number of the last background command
+  
+  Positional Parameters - $0 to $9, pointing $0 pointing to the actual command -or- program -or- shell script -or- function and S1, $2 .... $9 as the arguments to the command.
+  
+  
+  
+  
+  
+  

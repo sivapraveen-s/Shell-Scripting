@@ -62,7 +62,7 @@ The Shell is real programming language complete with variables, control statemen
 
 ### Comments
 ```
-command start with **#** 
+command start with # 
 ```
 
 ### Variables

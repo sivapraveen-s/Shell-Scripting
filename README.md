@@ -61,9 +61,17 @@ The Shell is real programming language complete with variables, control statemen
 
 
 ### Comments
-```
-command start with # 
-```
+ - Single-Line Comment: **#** 
+
+ - Multi-Line Comments: 
+   - Eg-01: <<com
+		commands needs to proceed 
+	 com
+   - Eg-02: Operator method
+	    : '
+		commands needs to proceed
+	    '
+
 
 ### Variables
 
@@ -129,18 +137,42 @@ Syntax: unset VARIABLE_NAME
   you get no warning or errors. This can cause some subtle bugs- if you assign
 
 #### Special Variables
-  $$   - Represents Process ID -or- PID of the current shell
-  $0  - The filename of the current script
-  $#  - The number of arguments supplied to a script
-  $*  - Arugments are double quoted. If a script received two arguments, $* is equivalent to $1 $2
-  $@  - Arguments are Inidvidually Double quoted. If a script receives two arguments, $@ is equivalent to $1 $2.
-  $?  - Exit status of the last command which was executed
-  $~  - Process number of the last background command
+  - $$   - Represents Process ID -or- PID of the current shell
+  - $0  - The filename of the current script
+  - $#  - The number of arguments supplied to a script
+  - $*  - Arugments are double quoted. If a script received two arguments, $* is equivalent to $1 $2
+  - $@  - Arguments are Inidvidually Double quoted. If a script receives two arguments, $@ is equivalent to $1 $2.
+  - $?  - Exit status of the last command which was executed
+    	 	- Exit 0 if they were successful, 1 if they were unsuccessful.	
+  - $~  - Process number of the last background command
   
-  Positional Parameters - $0 to $9, pointing $0 pointing to the actual command -or- program -or- shell script -or- function and S1, $2 .... $9 as the arguments to the command.
+  ***Positional Parameters - $0 to $9, pointing $0 pointing to the actual command -or- program -or- shell script -or- function and S1, $2 .... $9 as the arguments to the command.***
   
+### Arrays
+
+ - Shell supports a different type of variable called an array variable. 
+ - Array is used to store multiple values at the same time.
+ - Arrays Provide method of grouping a set of variables, instead of creating a new name for each variable that is required.
+
+  #### Defining Array Values
+
+  ```
+  array[index]=value
+  ```
   
+  ##### Array Initialization
+  **ksh shell**  
+  ```
+  set -A array value1 value2 .... valuen
+  ```
+  **bash shell**
+  ```
+  array=(value1 ... valuen)
+  ```  
   
-  
-  
+  #### Accessing Array Values
+  After init the set of array variable, can access it as follows...
+  ```
+  ${array[index]}
+  ```
   

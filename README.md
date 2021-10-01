@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 A Shell Script is a computer program designed to run by the Unix/linux shell which could be one of the following:
 - The Bourne Shell
@@ -10,30 +10,30 @@ A Shell Script is a computer program designed to run by the Unix/linux shell whi
 Shell is a Command-Line interpreter and typical operations performed by Shell Scripts include file manipulation,
 Program Execution and Printing Outputs in the Command Link based on the Key-Or-Event
 
-### Shell Prompt
+## Shell Prompt
 
 The Prompt, $ which is called the **command prompt**, is issued by the shell. While the Prompt is Displayed, you can type a command
 
 Shell reads the input from the command Line, when the user press 'Enter'. It Determines the command you want executed by looking at the first word
 of the input. A Word is a unbroken set of character. Spaces and Tabs are the Seperate Words. All the seperate commands are followed by Spaces -or- Tab's
 
-### Major Types Of Shells
+## Major Types Of Shells
 
 - Bourne Shell - $ Character is the default prompt
 - C Shell      - % Character is the default prompt
 
-#### Bourne Shell SubCategories
+### Bourne Shell SubCategories
 - Bourne Shell (sh)
 - Korn Shell (ksh)
 - Bourne Again Shell (bash)
 - POSIX Shell (sh)
 
-#### C-Type Shell
+### C-Type Shell
 - C Shell (csh)
 - TENEX/TOPS C Shell (tcsh)
 
 
-#### Shebang Construct
+### Shebang Construct
 
 file extension - filename.sh
 before you add anything else to your script, you need to alert the system that a shell script is begin started. This is done using the
@@ -46,7 +46,7 @@ shebang construct. for example
 This above construct tells the system that the commands that follow are to be executed by the Bourne Shell. It is called a Shebang because the **#** symbol is called a hash, and ! Symbol is called a bang.
 
 
-### Changing Script executable 
+## Changing Script executable 
 
 '''
 chmod a+rx filename.sh
@@ -54,13 +54,13 @@ chmod +x filename.sh
 '''
 
 
-### Extended Shell Scripts
+## Extended Shell Scripts
 <p align = "left"> Shell Scripts have several require constructs that tell the shell environment what to do and when to do it. ofcourse, most scripts are more complex than the above one. 
 
 The Shell is real programming language complete with variables, control statements and so forth. </p>
 
 
-### Comments
+## Comments
  - Single-Line Comment: **#** 
 
  - Multi-Line Comments: 
@@ -73,7 +73,7 @@ The Shell is real programming language complete with variables, control statemen
 	    '
 
 
-### Variables
+## Variables
 
 - Doesn't Need to declare the variable before initalizing or using it.
 - Shell Doesn't care about types of variables, they may store strings, integers, real numbers etc.,
@@ -85,11 +85,11 @@ The Shell is real programming language complete with variables, control statemen
 
 The name of a variable can contain only letters `(a to z -or- A to Z)` numbers `(0 to 9)` or the underscore character `(_)`
 
-#### Accessing Values
+### Accessing Values
 
 To access the value stored in a variable, prefix its name with the **dollar sign($)** 
 
-##### Example Program 01
+#### Example Program 01
 ```
 #!/bin/sh
 
@@ -97,11 +97,11 @@ DATA="Sivapraveen"
 echo $DATA
 ``` 
 
-#### Read Only Variables
+### Read Only Variables
 
 **Keyword is `readonly`**
 
-##### Example Program 02
+#### Example Program 02
 ```
 #!/bin/sh
 
@@ -114,7 +114,7 @@ Output of Program 02:
 /bin/sh: DATA: This variable is read only.
 ```
 
-#### Unsetting Variables
+### Unsetting Variables
 
   <p align = "left"> Unsetting or Deleting a variable directly the shell is remove the variable from the list of variables that it  tracks.
   Once unset variable cannot be access the store value in the variable.
@@ -123,20 +123,20 @@ Output of Program 02:
 Syntax: unset VARIABLE_NAME
 ```
 
-#### Variable Types
+### Variable Types
   
   1. Local Variables
   2. Environment Variables
   3. Shell Variables
 
 
-#### Scope of Variables
+### Scope of Variables
 
   Variables in the Bournce shell do not have to be declared as they do like in C/C++. 
   But if you try to read an undeclared variable, the result is the empty string.
   you get no warning or errors. This can cause some subtle bugs- if you assign
 
-#### Special Variables
+### Special Variables
   - $$   - Represents Process ID -or- PID of the current shell
   - $0  - The filename of the current script
   - $#  - The number of arguments supplied to a script
@@ -148,19 +148,19 @@ Syntax: unset VARIABLE_NAME
   
   ***Positional Parameters - $0 to $9, pointing $0 pointing to the actual command -or- program -or- shell script -or- function and S1, $2 .... $9 as the arguments to the command.***
   
-### Arrays
+## Arrays
 
  - Shell supports a different type of variable called an array variable. 
  - Array is used to store multiple values at the same time.
  - Arrays Provide method of grouping a set of variables, instead of creating a new name for each variable that is required.
 
-  #### Defining Array Values
+  ### Defining Array Values
 
   ```
   array[index]=value
   ```
   
-  ##### Array Initialization
+  #### Array Initialization
   **ksh shell**  
   ```
   set -A array value1 value2 .... valuen
@@ -170,7 +170,7 @@ Syntax: unset VARIABLE_NAME
   array=(value1 ... valuen)
   ```  
   
-  #### Accessing Array Values
+  ### Accessing Array Values
   After init the set of array variable, can access it as follows...
   ```
   ${array[index]}

@@ -31,3 +31,27 @@ of the input. A Word is a unbroken set of character. Spaces and Tabs are the Sep
 - C Shell (csh)
 - TENEX/TOPS C Shell (tcsh)
 
+
+#### Shebang Construct
+
+file extension - filename.sh
+before you add anything else to your script, you need to alert the system that a shell script is begin started. This is done using the
+shebang construct. for example
+
+'''
+#!/bin/sh
+'''
+
+This above construct tells the system that the commands that follow are to be executed by the Bourne Shell. It is called a Shebang because the **#** symbol is called a hash, and ! Symbol is called a bang.
+
+
+### Changing Scipt executable 
+
+'''
+chmod +x filename.sh
+'''
+
+
+### Extended Shell Scripts
+<p align = "center"> Extended Shell Scripts </p>
+
